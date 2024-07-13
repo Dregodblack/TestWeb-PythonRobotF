@@ -1,0 +1,2417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.7.4 on win32)" generated="20221118 08:30:40.311" rpa="false" schemaversion="3">
+<suite id="s1" name="Suite SWAGLABS" source="C:\Automação\VsCode\Treinamento\Automação_SWAGLABS\Tests\Suite_SWAGLABS.robot">
+<test id="s1-t1" name="CT01: Realizar Login com sucesso no site da SWAG LABS" line="29">
+<kw name="Iniciar Sessão" library="MetodosGlobais" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 08:30:43.684" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221118 08:30:43.684" endtime="20221118 08:30:45.676"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 08:30:45.676" endtime="20221118 08:30:45.807"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:30:50.820" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:30:45.808" endtime="20221118 08:30:50.820"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:45.808" endtime="20221118 08:30:50.820"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:43.683" endtime="20221118 08:30:50.820"/>
+</kw>
+<kw name="Dado que acesso o site do SWAG LABS" library="Steps_SWAGLABS">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Site_SWAGLAB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 08:30:50.822" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20221118 08:30:50.822" endtime="20221118 08:30:51.470"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:30:51.472" endtime="20221118 08:30:51.512"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:30:56.521" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:30:51.512" endtime="20221118 08:30:56.521"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:51.512" endtime="20221118 08:30:56.521"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:30:56.625" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:30:56.521" endtime="20221118 08:30:56.625"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:51.471" endtime="20221118 08:30:56.625"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:50.821" endtime="20221118 08:30:56.625"/>
+</kw>
+<kw name="Quando preencho os campos de Usuario &gt;&gt; &quot;performance_glitch_user&quot; e Senha &gt;&gt; &quot;secret_sauce&quot;" library="Steps_SWAGLABS" sourcename="Quando preencho os campos de Usuario &gt;&gt; &quot;${Usuario}&quot; e Senha &gt;&gt; &quot;${Senha}&quot;">
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Username}</arg>
+<arg>${Usuario}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:30:56.627" endtime="20221118 08:30:56.650"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:01.669" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:30:56.651" endtime="20221118 08:31:01.669"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:56.650" endtime="20221118 08:31:01.669"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:01.761" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:01.669" endtime="20221118 08:31:01.761"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:56.627" endtime="20221118 08:31:01.761"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:31:01.763" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:31:01.762" endtime="20221118 08:31:01.829"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:56.627" endtime="20221118 08:31:01.829"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:31:01.830" level="INFO">Typing text 'performance_glitch_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:31:01.829" endtime="20221118 08:31:01.915"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:56.626" endtime="20221118 08:31:01.915"/>
+</kw>
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Password}</arg>
+<arg>${Senha}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:01.916" endtime="20221118 08:31:01.933"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:06.948" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:01.934" endtime="20221118 08:31:06.948"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:01.933" endtime="20221118 08:31:06.949"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:07.053" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:06.949" endtime="20221118 08:31:07.054"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:01.916" endtime="20221118 08:31:07.055"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:31:07.056" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:31:07.055" endtime="20221118 08:31:07.098"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:01.916" endtime="20221118 08:31:07.098"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:31:07.101" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:31:07.099" endtime="20221118 08:31:07.159"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:01.915" endtime="20221118 08:31:07.159"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Login}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:07.162" endtime="20221118 08:31:07.181"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:12.183" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:07.182" endtime="20221118 08:31:12.183"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:07.181" endtime="20221118 08:31:12.183"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:12.294" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:12.184" endtime="20221118 08:31:12.294"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:07.161" endtime="20221118 08:31:12.294"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:31:12.295" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20221118 08:31:12.294" endtime="20221118 08:31:17.409"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:07.160" endtime="20221118 08:31:17.409"/>
+</kw>
+<status status="PASS" starttime="20221118 08:30:56.626" endtime="20221118 08:31:17.409"/>
+</kw>
+<kw name="Então valido que o usuario realizou o login com sucesso" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_HomePage}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:17.411" endtime="20221118 08:31:17.485"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:22.501" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:17.485" endtime="20221118 08:31:22.501"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:17.485" endtime="20221118 08:31:22.501"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:22.668" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:22.501" endtime="20221118 08:31:22.668"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:17.411" endtime="20221118 08:31:22.669"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Menu}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:22.671" endtime="20221118 08:31:22.702"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:27.710" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:22.702" endtime="20221118 08:31:27.710"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:22.702" endtime="20221118 08:31:27.710"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:27.850" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:27.710" endtime="20221118 08:31:27.850"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:22.670" endtime="20221118 08:31:27.850"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:31:27.852" level="INFO">Clicking button '//button[@id='react-burger-menu-btn']'.</msg>
+<status status="PASS" starttime="20221118 08:31:27.851" endtime="20221118 08:31:27.908"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:22.669" endtime="20221118 08:31:27.908"/>
+</kw>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Btn_Logout}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:27.910" endtime="20221118 08:31:28.166"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:33.170" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:28.167" endtime="20221118 08:31:33.170"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:28.166" endtime="20221118 08:31:33.170"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:33.277" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:33.170" endtime="20221118 08:31:33.277"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:27.909" endtime="20221118 08:31:33.278"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:31:33.279" level="INFO">Clicking element '//a[@id='logout_sidebar_link']'.</msg>
+<status status="PASS" starttime="20221118 08:31:33.278" endtime="20221118 08:31:33.363"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:27.908" endtime="20221118 08:31:33.364"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:33.364" endtime="20221118 08:31:33.381"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:38.383" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:33.381" endtime="20221118 08:31:38.383"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:33.381" endtime="20221118 08:31:38.383"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:38.460" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:38.383" endtime="20221118 08:31:38.460"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:33.364" endtime="20221118 08:31:38.460"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:17.411" endtime="20221118 08:31:38.460"/>
+</kw>
+<kw name="Finalizar Sessão" library="MetodosGlobais" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:38.552" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:38.461" endtime="20221118 08:31:38.552"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 08:31:38.552" endtime="20221118 08:31:40.824"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:38.461" endtime="20221118 08:31:40.824"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT01: Realizar Login com sucesso no site da SWAG LABS</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20221118 08:31:40.980" level="INFO" html="true">&lt;a href="recording_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:40.825" endtime="20221118 08:31:40.980"/>
+</kw>
+<doc>Esse Teste realiza o fluxo de login no site SWAG LABS</doc>
+<tag>Login</tag>
+<status status="PASS" starttime="20221118 08:30:41.552" endtime="20221118 08:31:40.825"/>
+</test>
+<test id="s1-t2" name="CT02: Realizar Login com falha no site da SWAG LABS" line="37">
+<kw name="Iniciar Sessão" library="MetodosGlobais" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 08:31:43.082" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221118 08:31:43.082" endtime="20221118 08:31:44.647"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 08:31:44.648" endtime="20221118 08:31:44.772"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:49.788" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:44.774" endtime="20221118 08:31:49.788"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:44.773" endtime="20221118 08:31:49.788"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:43.081" endtime="20221118 08:31:49.788"/>
+</kw>
+<kw name="Dado que acesso o site do SWAG LABS" library="Steps_SWAGLABS">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Site_SWAGLAB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 08:31:49.790" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20221118 08:31:49.790" endtime="20221118 08:31:50.006"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:50.008" endtime="20221118 08:31:50.054"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:31:55.070" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:50.055" endtime="20221118 08:31:55.070"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:50.055" endtime="20221118 08:31:55.070"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:31:55.165" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:31:55.070" endtime="20221118 08:31:55.165"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:50.006" endtime="20221118 08:31:55.165"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:49.789" endtime="20221118 08:31:55.165"/>
+</kw>
+<kw name="Quando preencho os campos de Usuario &gt;&gt; &quot;locked_out_user problem_user&quot; e Senha &gt;&gt; &quot;${Senha_Faker}&quot;" library="Steps_SWAGLABS" sourcename="Quando preencho os campos de Usuario &gt;&gt; &quot;${Usuario}&quot; e Senha &gt;&gt; &quot;${Senha}&quot;">
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Username}</arg>
+<arg>${Usuario}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:31:55.167" endtime="20221118 08:31:55.195"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:00.200" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:31:55.197" endtime="20221118 08:32:00.201"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:55.195" endtime="20221118 08:32:00.201"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:00.290" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:00.201" endtime="20221118 08:32:00.290"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:55.167" endtime="20221118 08:32:00.290"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:00.291" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:32:00.291" endtime="20221118 08:32:00.357"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:55.166" endtime="20221118 08:32:00.357"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:00.357" level="INFO">Typing text 'locked_out_user problem_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:32:00.357" endtime="20221118 08:32:00.457"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:55.166" endtime="20221118 08:32:00.457"/>
+</kw>
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Password}</arg>
+<arg>${Senha}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:00.459" endtime="20221118 08:32:00.483"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:05.491" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:00.484" endtime="20221118 08:32:05.491"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:00.483" endtime="20221118 08:32:05.492"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:05.589" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:05.492" endtime="20221118 08:32:05.589"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:00.458" endtime="20221118 08:32:05.589"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:05.590" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:32:05.590" endtime="20221118 08:32:05.633"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:00.457" endtime="20221118 08:32:05.634"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:05.635" level="INFO">Typing text 'FakerLibrary.password' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:32:05.634" endtime="20221118 08:32:05.724"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:00.457" endtime="20221118 08:32:05.724"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Login}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:05.725" endtime="20221118 08:32:05.752"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:10.761" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:05.752" endtime="20221118 08:32:10.761"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:05.752" endtime="20221118 08:32:10.762"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:10.876" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:10.762" endtime="20221118 08:32:10.876"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:05.725" endtime="20221118 08:32:10.877"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:10.877" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20221118 08:32:10.877" endtime="20221118 08:32:10.927"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:05.724" endtime="20221118 08:32:10.927"/>
+</kw>
+<status status="PASS" starttime="20221118 08:31:55.166" endtime="20221118 08:32:10.927"/>
+</kw>
+<kw name="Então valido a mensagem de erro exibida na tela de login" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Locator_Erro_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:10.929" endtime="20221118 08:32:10.970"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:15.977" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:10.972" endtime="20221118 08:32:15.977"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:10.970" endtime="20221118 08:32:15.977"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:16.080" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:15.978" endtime="20221118 08:32:16.081"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:10.929" endtime="20221118 08:32:16.082"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Locator_Erro_Login}</arg>
+<arg>${Mensagem_Erro_Login}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221118 08:32:16.084" level="INFO">Verifying element '//div[@class='error-message-container error']' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<status status="PASS" starttime="20221118 08:32:16.083" endtime="20221118 08:32:16.114"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:10.928" endtime="20221118 08:32:16.115"/>
+</kw>
+<kw name="Finalizar Sessão" library="MetodosGlobais" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:16.215" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:16.117" endtime="20221118 08:32:16.215"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 08:32:16.215" endtime="20221118 08:32:18.536"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:16.117" endtime="20221118 08:32:18.537"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT02: Realizar Login com falha no site da SWAG LABS</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20221118 08:32:18.721" level="INFO" html="true">&lt;a href="recording_2.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_2.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:18.539" endtime="20221118 08:32:18.721"/>
+</kw>
+<doc>Esse Teste realiza o fluxo de login no site SWAG LABS</doc>
+<tag>Login</tag>
+<status status="PASS" starttime="20221118 08:31:40.981" endtime="20221118 08:32:18.537"/>
+</test>
+<test id="s1-t3" name="CT03: Selecionar produto e adicionar ao carrinho" line="45">
+<kw name="Iniciar Sessão" library="MetodosGlobais" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 08:32:20.825" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221118 08:32:20.825" endtime="20221118 08:32:22.926"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 08:32:22.927" endtime="20221118 08:32:23.063"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:28.073" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:23.066" endtime="20221118 08:32:28.073"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:23.064" endtime="20221118 08:32:28.073"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:20.825" endtime="20221118 08:32:28.073"/>
+</kw>
+<kw name="Dado que acesso o site do SWAG LABS" library="Steps_SWAGLABS">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Site_SWAGLAB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 08:32:28.075" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20221118 08:32:28.074" endtime="20221118 08:32:28.298"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:28.299" endtime="20221118 08:32:28.346"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:33.358" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:28.346" endtime="20221118 08:32:33.358"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:28.346" endtime="20221118 08:32:33.358"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:33.443" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:33.358" endtime="20221118 08:32:33.443"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:28.299" endtime="20221118 08:32:33.444"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:28.074" endtime="20221118 08:32:33.444"/>
+</kw>
+<kw name="Quando preencho os campos de Usuario &gt;&gt; &quot;standard_user&quot; e Senha &gt;&gt; &quot;secret_sauce&quot;" library="Steps_SWAGLABS" sourcename="Quando preencho os campos de Usuario &gt;&gt; &quot;${Usuario}&quot; e Senha &gt;&gt; &quot;${Senha}&quot;">
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Username}</arg>
+<arg>${Usuario}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:33.448" endtime="20221118 08:32:33.473"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:38.487" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:33.474" endtime="20221118 08:32:38.487"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:33.473" endtime="20221118 08:32:38.487"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:38.577" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:38.488" endtime="20221118 08:32:38.578"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:33.447" endtime="20221118 08:32:38.578"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:38.579" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:32:38.578" endtime="20221118 08:32:38.629"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:33.447" endtime="20221118 08:32:38.630"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:38.631" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:32:38.630" endtime="20221118 08:32:38.759"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:33.447" endtime="20221118 08:32:38.760"/>
+</kw>
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Password}</arg>
+<arg>${Senha}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:38.761" endtime="20221118 08:32:38.790"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:43.802" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:38.791" endtime="20221118 08:32:43.802"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:38.790" endtime="20221118 08:32:43.802"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:43.888" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:43.802" endtime="20221118 08:32:43.889"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:38.761" endtime="20221118 08:32:43.889"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:43.890" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:32:43.889" endtime="20221118 08:32:43.936"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:38.761" endtime="20221118 08:32:43.936"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:43.937" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:32:43.937" endtime="20221118 08:32:44.000"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:38.760" endtime="20221118 08:32:44.001"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Login}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:44.003" endtime="20221118 08:32:44.027"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:49.039" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:44.027" endtime="20221118 08:32:49.039"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:44.027" endtime="20221118 08:32:49.039"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:49.126" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:49.040" endtime="20221118 08:32:49.126"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:44.002" endtime="20221118 08:32:49.126"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:32:49.127" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20221118 08:32:49.126" endtime="20221118 08:32:49.258"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:44.001" endtime="20221118 08:32:49.258"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:33.446" endtime="20221118 08:32:49.258"/>
+</kw>
+<kw name=" E acesso a pagina principal da home page" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_HomePage}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:49.260" endtime="20221118 08:32:49.286"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:54.290" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:49.287" endtime="20221118 08:32:54.290"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:49.287" endtime="20221118 08:32:54.290"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:54.451" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:54.290" endtime="20221118 08:32:54.452"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:49.259" endtime="20221118 08:32:54.452"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Btn_Menu}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:54.453" endtime="20221118 08:32:54.475"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:32:59.478" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:54.476" endtime="20221118 08:32:59.478"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:54.476" endtime="20221118 08:32:59.479"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:32:59.643" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:32:59.479" endtime="20221118 08:32:59.643"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:54.452" endtime="20221118 08:32:59.643"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:49.259" endtime="20221118 08:32:59.644"/>
+</kw>
+<kw name="E seleciono um produto" library="Steps_SWAGLABS">
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Produto_Luz_de_Bike}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:32:59.647" endtime="20221118 08:32:59.672"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:04.684" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:32:59.672" endtime="20221118 08:33:04.684"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:59.672" endtime="20221118 08:33:04.684"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:04.837" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:04.684" endtime="20221118 08:33:04.837"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:59.646" endtime="20221118 08:33:04.839"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:04.840" level="INFO">Clicking element 'xpath=//*[@id="item_0_title_link"]/div'.</msg>
+<status status="PASS" starttime="20221118 08:33:04.839" endtime="20221118 08:33:04.925"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:59.646" endtime="20221118 08:33:04.926"/>
+</kw>
+<status status="PASS" starttime="20221118 08:32:59.645" endtime="20221118 08:33:04.926"/>
+</kw>
+<kw name="E adiciono ele no carrinho" library="Steps_SWAGLABS">
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Add_Carrinho}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:04.927" endtime="20221118 08:33:04.967"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:09.979" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:04.968" endtime="20221118 08:33:09.979"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:04.967" endtime="20221118 08:33:09.979"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:10.159" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:09.979" endtime="20221118 08:33:10.159"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:04.927" endtime="20221118 08:33:10.159"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:10.161" level="INFO">Clicking button 'xpath=//*[@id="add-to-cart-sauce-labs-bike-light"]'.</msg>
+<status status="PASS" starttime="20221118 08:33:10.159" endtime="20221118 08:33:10.219"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:04.927" endtime="20221118 08:33:10.219"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:04.927" endtime="20221118 08:33:10.220"/>
+</kw>
+<kw name="E seleciono a opção carrinho" library="Steps_SWAGLABS">
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Btn_Carrinho}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:10.222" endtime="20221118 08:33:10.255"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:15.261" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:10.255" endtime="20221118 08:33:15.261"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:10.255" endtime="20221118 08:33:15.261"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:15.425" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:15.261" endtime="20221118 08:33:15.425"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:10.221" endtime="20221118 08:33:15.425"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:15.426" level="INFO">Clicking element 'xpath=//*[@id="shopping_cart_container"]/a'.</msg>
+<status status="PASS" starttime="20221118 08:33:15.425" endtime="20221118 08:33:15.465"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:10.221" endtime="20221118 08:33:15.466"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:10.220" endtime="20221118 08:33:15.466"/>
+</kw>
+<kw name="Então valido que o produto está no carrinho" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Page_Carrinho}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:15.467" endtime="20221118 08:33:15.492"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:20.499" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:15.493" endtime="20221118 08:33:20.499"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:15.492" endtime="20221118 08:33:20.499"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:20.592" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:20.500" endtime="20221118 08:33:20.592"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:15.467" endtime="20221118 08:33:20.592"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Btn_Remove}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:20.592" endtime="20221118 08:33:20.612"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:25.612" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:20.612" endtime="20221118 08:33:25.612"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:20.612" endtime="20221118 08:33:25.612"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:25.700" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:25.613" endtime="20221118 08:33:25.700"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:20.592" endtime="20221118 08:33:25.700"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:15.466" endtime="20221118 08:33:25.700"/>
+</kw>
+<kw name="Finalizar Sessão" library="MetodosGlobais" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:25.780" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:25.702" endtime="20221118 08:33:25.780"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 08:33:25.780" endtime="20221118 08:33:28.046"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:25.701" endtime="20221118 08:33:28.046"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT03: Selecionar produto e adicionar ao carrinho</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20221118 08:33:28.221" level="INFO" html="true">&lt;a href="recording_3.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_3.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:28.047" endtime="20221118 08:33:28.221"/>
+</kw>
+<doc>Esse Teste realiza o fluxo de adicionar o produto no carrinho</doc>
+<tag>Carrinho</tag>
+<status status="PASS" starttime="20221118 08:32:18.723" endtime="20221118 08:33:28.047"/>
+</test>
+<test id="s1-t4" name="CT04: Remover produto do carrinho" line="57">
+<kw name="Iniciar Sessão" library="MetodosGlobais" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 08:33:30.285" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221118 08:33:30.285" endtime="20221118 08:33:31.779"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 08:33:31.779" endtime="20221118 08:33:31.901"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:36.912" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:31.903" endtime="20221118 08:33:36.913"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:31.901" endtime="20221118 08:33:36.913"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:30.284" endtime="20221118 08:33:36.913"/>
+</kw>
+<kw name="Dado que acesso o site do SWAG LABS" library="Steps_SWAGLABS">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Site_SWAGLAB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 08:33:36.915" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20221118 08:33:36.914" endtime="20221118 08:33:37.144"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:37.146" endtime="20221118 08:33:37.193"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:42.198" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:37.193" endtime="20221118 08:33:42.198"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:37.193" endtime="20221118 08:33:42.198"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:42.295" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:42.198" endtime="20221118 08:33:42.296"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:37.144" endtime="20221118 08:33:42.296"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:36.914" endtime="20221118 08:33:42.296"/>
+</kw>
+<kw name="Quando preencho os campos de Usuario &gt;&gt; &quot;standard_user&quot; e Senha &gt;&gt; &quot;secret_sauce&quot;" library="Steps_SWAGLABS" sourcename="Quando preencho os campos de Usuario &gt;&gt; &quot;${Usuario}&quot; e Senha &gt;&gt; &quot;${Senha}&quot;">
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Username}</arg>
+<arg>${Usuario}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:42.298" endtime="20221118 08:33:42.331"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:47.335" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:42.332" endtime="20221118 08:33:47.335"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:42.331" endtime="20221118 08:33:47.335"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:47.438" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:47.336" endtime="20221118 08:33:47.439"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:42.297" endtime="20221118 08:33:47.439"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:47.440" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:33:47.439" endtime="20221118 08:33:47.515"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:42.297" endtime="20221118 08:33:47.515"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:47.516" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:33:47.516" endtime="20221118 08:33:47.604"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:42.297" endtime="20221118 08:33:47.605"/>
+</kw>
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Password}</arg>
+<arg>${Senha}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:47.606" endtime="20221118 08:33:47.631"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:52.645" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:47.631" endtime="20221118 08:33:52.645"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:47.631" endtime="20221118 08:33:52.646"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:52.729" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:52.646" endtime="20221118 08:33:52.729"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:47.606" endtime="20221118 08:33:52.729"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:52.730" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:33:52.729" endtime="20221118 08:33:52.767"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:47.605" endtime="20221118 08:33:52.767"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:52.767" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:33:52.767" endtime="20221118 08:33:52.830"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:47.605" endtime="20221118 08:33:52.830"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Login}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:52.832" endtime="20221118 08:33:52.852"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:33:57.853" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:52.852" endtime="20221118 08:33:57.853"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:52.852" endtime="20221118 08:33:57.854"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:33:57.945" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:33:57.854" endtime="20221118 08:33:57.945"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:52.832" endtime="20221118 08:33:57.945"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:33:57.945" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20221118 08:33:57.945" endtime="20221118 08:33:58.069"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:52.830" endtime="20221118 08:33:58.069"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:42.296" endtime="20221118 08:33:58.069"/>
+</kw>
+<kw name=" E acesso a pagina principal da home page" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_HomePage}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:33:58.072" endtime="20221118 08:33:58.135"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:03.150" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:33:58.136" endtime="20221118 08:34:03.150"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:58.135" endtime="20221118 08:34:03.150"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:03.295" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:03.151" endtime="20221118 08:34:03.295"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:58.071" endtime="20221118 08:34:03.296"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Btn_Menu}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:03.296" endtime="20221118 08:34:03.316"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:08.328" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:03.317" endtime="20221118 08:34:08.328"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:03.317" endtime="20221118 08:34:08.328"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:08.470" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:08.328" endtime="20221118 08:34:08.471"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:03.296" endtime="20221118 08:34:08.471"/>
+</kw>
+<status status="PASS" starttime="20221118 08:33:58.070" endtime="20221118 08:34:08.471"/>
+</kw>
+<kw name="E seleciono um produto" library="Steps_SWAGLABS">
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Produto_Luz_de_Bike}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:08.474" endtime="20221118 08:34:08.498"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:13.509" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:08.499" endtime="20221118 08:34:13.509"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:08.498" endtime="20221118 08:34:13.509"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:13.642" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:13.509" endtime="20221118 08:34:13.642"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:08.473" endtime="20221118 08:34:13.642"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:34:13.643" level="INFO">Clicking element 'xpath=//*[@id="item_0_title_link"]/div'.</msg>
+<status status="PASS" starttime="20221118 08:34:13.642" endtime="20221118 08:34:13.739"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:08.473" endtime="20221118 08:34:13.740"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:08.472" endtime="20221118 08:34:13.740"/>
+</kw>
+<kw name="E adiciono ele no carrinho" library="Steps_SWAGLABS">
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Add_Carrinho}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:13.742" endtime="20221118 08:34:13.784"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:18.788" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:13.784" endtime="20221118 08:34:18.788"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:13.784" endtime="20221118 08:34:18.788"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:18.958" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:18.789" endtime="20221118 08:34:18.958"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:13.742" endtime="20221118 08:34:18.958"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:34:18.959" level="INFO">Clicking button 'xpath=//*[@id="add-to-cart-sauce-labs-bike-light"]'.</msg>
+<status status="PASS" starttime="20221118 08:34:18.958" endtime="20221118 08:34:19.047"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:13.742" endtime="20221118 08:34:19.047"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:13.740" endtime="20221118 08:34:19.047"/>
+</kw>
+<kw name="E seleciono a opção carrinho" library="Steps_SWAGLABS">
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Btn_Carrinho}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:19.050" endtime="20221118 08:34:19.080"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:24.090" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:19.080" endtime="20221118 08:34:24.090"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:19.080" endtime="20221118 08:34:24.090"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:24.248" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:24.090" endtime="20221118 08:34:24.248"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:19.050" endtime="20221118 08:34:24.249"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:34:24.250" level="INFO">Clicking element 'xpath=//*[@id="shopping_cart_container"]/a'.</msg>
+<status status="PASS" starttime="20221118 08:34:24.249" endtime="20221118 08:34:24.300"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:19.049" endtime="20221118 08:34:24.300"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:19.049" endtime="20221118 08:34:24.300"/>
+</kw>
+<kw name="E removo o produto do carrinho" library="Steps_SWAGLABS">
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Btn_Remove}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:24.304" endtime="20221118 08:34:24.328"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:29.335" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:24.329" endtime="20221118 08:34:29.335"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:24.329" endtime="20221118 08:34:29.335"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:29.413" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:29.335" endtime="20221118 08:34:29.413"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:24.304" endtime="20221118 08:34:29.413"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:34:29.414" level="INFO">Clicking element 'xpath=//*[@id="remove-sauce-labs-bike-light"]'.</msg>
+<status status="PASS" starttime="20221118 08:34:29.413" endtime="20221118 08:34:29.462"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:24.303" endtime="20221118 08:34:29.462"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:24.303" endtime="20221118 08:34:29.462"/>
+</kw>
+<kw name="Então valido que o carrinho está vazio" library="Steps_SWAGLABS">
+<kw name="Validação de Elemento não encontrado na tela" library="MetodosGlobais">
+<arg>${Btn_Remove}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Validar elemento</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221118 08:34:34.572" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221118 08:34:34.573" level="FAIL">Element 'xpath=//*[@id="remove-sauce-labs-bike-light"]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221118 08:34:29.464" endtime="20221118 08:34:34.576"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<status status="NOT RUN" starttime="20221118 08:34:34.576" endtime="20221118 08:34:34.576"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20221118 08:34:34.576" endtime="20221118 08:34:34.576"/>
+</kw>
+<status status="FAIL" starttime="20221118 08:34:29.464" endtime="20221118 08:34:34.576"/>
+</kw>
+<msg timestamp="20221118 08:34:34.576" level="INFO">${Status} = False</msg>
+<status status="PASS" starttime="20221118 08:34:29.463" endtime="20221118 08:34:34.576"/>
+</kw>
+<kw name="Pass Execution If" library="BuiltIn">
+<arg>'${Status}' == 'False'</arg>
+<arg>Pass Execution</arg>
+<doc>Conditionally skips rest of the current test, setup, or teardown with PASS status.</doc>
+<msg timestamp="20221118 08:34:34.577" level="INFO">Execution passed with message:
+Pass Execution</msg>
+<status status="PASS" starttime="20221118 08:34:34.577" endtime="20221118 08:34:34.577"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:29.463" endtime="20221118 08:34:34.577"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:29.463" endtime="20221118 08:34:34.577"/>
+</kw>
+<kw name="Finalizar Sessão" library="MetodosGlobais" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:34.679" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-39.png"&gt;&lt;img src="selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:34.578" endtime="20221118 08:34:34.679"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 08:34:34.680" endtime="20221118 08:34:36.897"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:34.578" endtime="20221118 08:34:36.897"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT04: Remover produto do carrinho</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20221118 08:34:36.929" level="INFO" html="true">&lt;a href="recording_4.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_4.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:36.898" endtime="20221118 08:34:36.929"/>
+</kw>
+<doc>Esse Teste realiza o fluxo de Remover produto do carrinho</doc>
+<tag>Carrinho</tag>
+<status status="PASS" starttime="20221118 08:33:28.223" endtime="20221118 08:34:36.898">Pass Execution</status>
+</test>
+<test id="s1-t5" name="CT05: Validar outro contato da pagina Home - Facebook" line="70">
+<kw name="Iniciar Sessão" library="MetodosGlobais" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 08:34:38.997" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221118 08:34:38.997" endtime="20221118 08:34:40.512"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 08:34:40.512" endtime="20221118 08:34:40.633"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:45.642" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:40.634" endtime="20221118 08:34:45.643"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:40.633" endtime="20221118 08:34:45.643"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:38.996" endtime="20221118 08:34:45.643"/>
+</kw>
+<kw name="Dado que acesso o site do SWAG LABS" library="Steps_SWAGLABS">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Site_SWAGLAB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 08:34:45.646" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20221118 08:34:45.645" endtime="20221118 08:34:45.900"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:45.901" endtime="20221118 08:34:45.967"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:50.983" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:45.967" endtime="20221118 08:34:50.983"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:45.967" endtime="20221118 08:34:50.983"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:51.074" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-40.png"&gt;&lt;img src="selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:50.983" endtime="20221118 08:34:51.074"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:45.900" endtime="20221118 08:34:51.074"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:45.645" endtime="20221118 08:34:51.074"/>
+</kw>
+<kw name="Quando preencho os campos de Usuario &gt;&gt; &quot;standard_user&quot; e Senha &gt;&gt; &quot;secret_sauce&quot;" library="Steps_SWAGLABS" sourcename="Quando preencho os campos de Usuario &gt;&gt; &quot;${Usuario}&quot; e Senha &gt;&gt; &quot;${Senha}&quot;">
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Username}</arg>
+<arg>${Usuario}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:51.077" endtime="20221118 08:34:51.121"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:34:56.135" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:51.123" endtime="20221118 08:34:56.135"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:51.122" endtime="20221118 08:34:56.136"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:34:56.235" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-41.png"&gt;&lt;img src="selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:34:56.136" endtime="20221118 08:34:56.235"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:51.077" endtime="20221118 08:34:56.235"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:34:56.236" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:34:56.236" endtime="20221118 08:34:56.300"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:51.077" endtime="20221118 08:34:56.301"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:34:56.302" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:34:56.301" endtime="20221118 08:34:56.408"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:51.076" endtime="20221118 08:34:56.409"/>
+</kw>
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Password}</arg>
+<arg>${Senha}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:34:56.411" endtime="20221118 08:34:56.437"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:01.440" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:34:56.438" endtime="20221118 08:35:01.440"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:56.438" endtime="20221118 08:35:01.440"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:01.523" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-42.png"&gt;&lt;img src="selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:01.441" endtime="20221118 08:35:01.523"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:56.411" endtime="20221118 08:35:01.523"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:01.525" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:35:01.524" endtime="20221118 08:35:01.563"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:56.410" endtime="20221118 08:35:01.563"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:01.564" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:35:01.563" endtime="20221118 08:35:01.622"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:56.409" endtime="20221118 08:35:01.622"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Login}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:01.624" endtime="20221118 08:35:01.640"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:06.651" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:01.641" endtime="20221118 08:35:06.651"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:01.640" endtime="20221118 08:35:06.651"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:06.755" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-43.png"&gt;&lt;img src="selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:06.652" endtime="20221118 08:35:06.755"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:01.623" endtime="20221118 08:35:06.755"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:06.757" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20221118 08:35:06.755" endtime="20221118 08:35:06.895"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:01.622" endtime="20221118 08:35:06.895"/>
+</kw>
+<status status="PASS" starttime="20221118 08:34:51.075" endtime="20221118 08:35:06.896"/>
+</kw>
+<kw name=" E acesso a pagina principal da home page" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_HomePage}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:06.899" endtime="20221118 08:35:06.958"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:11.961" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:06.958" endtime="20221118 08:35:11.961"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:06.958" endtime="20221118 08:35:11.961"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:12.113" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:11.961" endtime="20221118 08:35:12.113"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:06.898" endtime="20221118 08:35:12.113"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Btn_Menu}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:12.114" endtime="20221118 08:35:12.140"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:17.148" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:12.140" endtime="20221118 08:35:17.148"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:12.140" endtime="20221118 08:35:17.149"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:17.301" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:17.149" endtime="20221118 08:35:17.301"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:12.113" endtime="20221118 08:35:17.301"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:06.897" endtime="20221118 08:35:17.301"/>
+</kw>
+<kw name="E seleciono a opção Facebook de contato" library="Steps_SWAGLABS">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Btn_Twitter}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221118 08:35:17.302" endtime="20221118 08:35:17.584"/>
+</kw>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Btn_Twitter}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:17.586" endtime="20221118 08:35:17.604"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:22.607" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:17.605" endtime="20221118 08:35:22.607"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:17.604" endtime="20221118 08:35:22.607"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:22.760" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:22.608" endtime="20221118 08:35:22.760"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:17.585" endtime="20221118 08:35:22.761"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:22.762" level="INFO">Clicking element 'xpath=//*[@id="page_wrapper"]/footer/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20221118 08:35:22.761" endtime="20221118 08:35:22.826"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:17.584" endtime="20221118 08:35:22.827"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:17.302" endtime="20221118 08:35:22.827"/>
+</kw>
+<kw name="Então valido a pagina do Facebook direcionada contendo as informações desejadas" library="Steps_SWAGLABS">
+<kw name="Validação de Elemento encontrado na tela" library="MetodosGlobais">
+<arg>${Element_Twitter}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Validar elemento</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221118 08:35:28.620" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221118 08:35:28.620" level="FAIL">Element 'xpath=//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[1]/div[1]/div/div/div/div/div/div[2]/div/h2/div/div/div/div/span[1]/span/span' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221118 08:35:22.830" endtime="20221118 08:35:28.621"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<status status="NOT RUN" starttime="20221118 08:35:28.622" endtime="20221118 08:35:28.622"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20221118 08:35:28.622" endtime="20221118 08:35:28.623"/>
+</kw>
+<status status="FAIL" starttime="20221118 08:35:22.829" endtime="20221118 08:35:28.623"/>
+</kw>
+<msg timestamp="20221118 08:35:28.623" level="INFO">${Status} = False</msg>
+<status status="PASS" starttime="20221118 08:35:22.829" endtime="20221118 08:35:28.623"/>
+</kw>
+<kw name="Pass Execution If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Pass Execution</arg>
+<doc>Conditionally skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="PASS" starttime="20221118 08:35:28.623" endtime="20221118 08:35:28.624"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:22.829" endtime="20221118 08:35:28.624"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:22.828" endtime="20221118 08:35:28.624"/>
+</kw>
+<kw name="Finalizar Sessão" library="MetodosGlobais" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:28.828" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:28.626" endtime="20221118 08:35:28.829"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 08:35:28.829" endtime="20221118 08:35:31.335"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:28.625" endtime="20221118 08:35:31.336"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT05: Validar outro contato da pagina Home - Facebook</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20221118 08:35:31.382" level="INFO" html="true">&lt;a href="recording_5.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_5.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:31.337" endtime="20221118 08:35:31.382"/>
+</kw>
+<doc>Esse Teste Validar outros meios de contatos da pagina Home</doc>
+<tag>contatos</tag>
+<status status="PASS" starttime="20221118 08:34:36.933" endtime="20221118 08:35:31.336"/>
+</test>
+<test id="s1-t6" name="CT06: Validar outro contato da pagina Home - Twitter" line="80">
+<kw name="Iniciar Sessão" library="MetodosGlobais" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 08:35:33.492" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221118 08:35:33.491" endtime="20221118 08:35:35.134"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 08:35:35.135" endtime="20221118 08:35:35.277"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:40.298" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:35.279" endtime="20221118 08:35:40.298"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:35.278" endtime="20221118 08:35:40.298"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:33.491" endtime="20221118 08:35:40.298"/>
+</kw>
+<kw name="Dado que acesso o site do SWAG LABS" library="Steps_SWAGLABS">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Site_SWAGLAB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 08:35:40.300" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20221118 08:35:40.299" endtime="20221118 08:35:40.581"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:40.582" endtime="20221118 08:35:40.635"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:45.641" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:40.636" endtime="20221118 08:35:45.641"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:40.635" endtime="20221118 08:35:45.641"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:45.727" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-49.png"&gt;&lt;img src="selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:45.641" endtime="20221118 08:35:45.727"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:40.582" endtime="20221118 08:35:45.727"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:40.299" endtime="20221118 08:35:45.727"/>
+</kw>
+<kw name="Quando preencho os campos de Usuario &gt;&gt; &quot;standard_user&quot; e Senha &gt;&gt; &quot;secret_sauce&quot;" library="Steps_SWAGLABS" sourcename="Quando preencho os campos de Usuario &gt;&gt; &quot;${Usuario}&quot; e Senha &gt;&gt; &quot;${Senha}&quot;">
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Username}</arg>
+<arg>${Usuario}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:45.731" endtime="20221118 08:35:45.765"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:50.775" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:45.765" endtime="20221118 08:35:50.775"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:45.765" endtime="20221118 08:35:50.776"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:50.884" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-50.png"&gt;&lt;img src="selenium-screenshot-50.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:50.776" endtime="20221118 08:35:50.884"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:45.731" endtime="20221118 08:35:50.884"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:50.884" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:35:50.884" endtime="20221118 08:35:50.959"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:45.730" endtime="20221118 08:35:50.959"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:50.961" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:35:50.960" endtime="20221118 08:35:51.079"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:45.729" endtime="20221118 08:35:51.079"/>
+</kw>
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Password}</arg>
+<arg>${Senha}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:51.083" endtime="20221118 08:35:51.107"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:35:56.123" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:51.107" endtime="20221118 08:35:56.123"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:51.107" endtime="20221118 08:35:56.123"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:35:56.215" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-51.png"&gt;&lt;img src="selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:35:56.123" endtime="20221118 08:35:56.216"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:51.082" endtime="20221118 08:35:56.216"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:56.216" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:35:56.216" endtime="20221118 08:35:56.264"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:51.081" endtime="20221118 08:35:56.264"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:35:56.266" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:35:56.265" endtime="20221118 08:35:56.350"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:51.079" endtime="20221118 08:35:56.350"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Login}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:35:56.351" endtime="20221118 08:35:56.368"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:01.378" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:35:56.368" endtime="20221118 08:36:01.378"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:56.368" endtime="20221118 08:36:01.378"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:01.466" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-52.png"&gt;&lt;img src="selenium-screenshot-52.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:01.379" endtime="20221118 08:36:01.466"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:56.351" endtime="20221118 08:36:01.467"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:36:01.468" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20221118 08:36:01.467" endtime="20221118 08:36:01.590"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:56.350" endtime="20221118 08:36:01.590"/>
+</kw>
+<status status="PASS" starttime="20221118 08:35:45.728" endtime="20221118 08:36:01.590"/>
+</kw>
+<kw name=" E acesso a pagina principal da home page" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_HomePage}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:01.592" endtime="20221118 08:36:01.636"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:06.652" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:01.637" endtime="20221118 08:36:06.652"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:01.636" endtime="20221118 08:36:06.652"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:06.808" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-53.png"&gt;&lt;img src="selenium-screenshot-53.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:06.652" endtime="20221118 08:36:06.809"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:01.591" endtime="20221118 08:36:06.809"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Btn_Menu}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:06.809" endtime="20221118 08:36:06.841"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:11.856" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:06.842" endtime="20221118 08:36:11.856"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:06.841" endtime="20221118 08:36:11.856"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:12.005" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-54.png"&gt;&lt;img src="selenium-screenshot-54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:11.856" endtime="20221118 08:36:12.006"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:06.809" endtime="20221118 08:36:12.006"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:01.591" endtime="20221118 08:36:12.006"/>
+</kw>
+<kw name="E seleciono a opção Twitter de contato" library="Steps_SWAGLABS">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Btn_Facebook}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221118 08:36:12.007" endtime="20221118 08:36:12.292"/>
+</kw>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Btn_Facebook}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:12.293" endtime="20221118 08:36:12.308"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:17.316" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:12.309" endtime="20221118 08:36:17.316"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:12.308" endtime="20221118 08:36:17.316"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:17.466" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-55.png"&gt;&lt;img src="selenium-screenshot-55.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:17.316" endtime="20221118 08:36:17.467"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:12.293" endtime="20221118 08:36:17.467"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:36:17.468" level="INFO">Clicking element 'xpath=//*[@id="page_wrapper"]/footer/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20221118 08:36:17.467" endtime="20221118 08:36:17.537"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:12.292" endtime="20221118 08:36:17.538"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:12.007" endtime="20221118 08:36:17.538"/>
+</kw>
+<kw name="Então valido a pagina do Twitter direcionada contendo as informações desejadas" library="Steps_SWAGLABS">
+<kw name="Validação de Elemento encontrado na tela" library="MetodosGlobais">
+<arg>${Element_Facebook}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Validar elemento</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221118 08:36:22.849" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-56.png"&gt;&lt;img src="selenium-screenshot-56.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221118 08:36:22.849" level="FAIL">Element 'xpath=//*[@id="mount_0_0_wM"]/div/div[1]/div/div[2]/div[2]/div[1]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221118 08:36:17.541" endtime="20221118 08:36:22.850"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<status status="NOT RUN" starttime="20221118 08:36:22.850" endtime="20221118 08:36:22.850"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20221118 08:36:22.851" endtime="20221118 08:36:22.851"/>
+</kw>
+<status status="FAIL" starttime="20221118 08:36:17.540" endtime="20221118 08:36:22.851"/>
+</kw>
+<msg timestamp="20221118 08:36:22.851" level="INFO">${Status} = False</msg>
+<status status="PASS" starttime="20221118 08:36:17.540" endtime="20221118 08:36:22.851"/>
+</kw>
+<kw name="Pass Execution If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Pass Execution</arg>
+<doc>Conditionally skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="PASS" starttime="20221118 08:36:22.852" endtime="20221118 08:36:22.852"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:17.540" endtime="20221118 08:36:22.852"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:17.539" endtime="20221118 08:36:22.853"/>
+</kw>
+<kw name="Finalizar Sessão" library="MetodosGlobais" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:23.023" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-57.png"&gt;&lt;img src="selenium-screenshot-57.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:22.854" endtime="20221118 08:36:23.024"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 08:36:23.024" endtime="20221118 08:36:25.290"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:22.854" endtime="20221118 08:36:25.290"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT06: Validar outro contato da pagina Home - Twitter</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20221118 08:36:25.326" level="INFO" html="true">&lt;a href="recording_6.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_6.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:25.292" endtime="20221118 08:36:25.326"/>
+</kw>
+<doc>Esse Teste Validar outros meios de contatos da pagina Home</doc>
+<tag>contatos</tag>
+<status status="PASS" starttime="20221118 08:35:31.384" endtime="20221118 08:36:25.291"/>
+</test>
+<test id="s1-t7" name="CT07: Validar outro contato da pagina Home - Linkedin" line="90">
+<kw name="Iniciar Sessão" library="MetodosGlobais" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 08:36:27.424" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221118 08:36:27.423" endtime="20221118 08:36:28.906"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 08:36:28.907" endtime="20221118 08:36:29.030"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:34.048" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:29.033" endtime="20221118 08:36:34.048"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:29.031" endtime="20221118 08:36:34.048"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:27.423" endtime="20221118 08:36:34.048"/>
+</kw>
+<kw name="Dado que acesso o site do SWAG LABS" library="Steps_SWAGLABS">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Site_SWAGLAB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 08:36:34.050" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20221118 08:36:34.050" endtime="20221118 08:36:34.311"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_Login}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:34.315" endtime="20221118 08:36:34.368"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:39.371" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:34.369" endtime="20221118 08:36:39.372"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:34.368" endtime="20221118 08:36:39.372"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:39.447" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-58.png"&gt;&lt;img src="selenium-screenshot-58.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:39.372" endtime="20221118 08:36:39.447"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:34.312" endtime="20221118 08:36:39.448"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:34.049" endtime="20221118 08:36:39.448"/>
+</kw>
+<kw name="Quando preencho os campos de Usuario &gt;&gt; &quot;standard_user&quot; e Senha &gt;&gt; &quot;secret_sauce&quot;" library="Steps_SWAGLABS" sourcename="Quando preencho os campos de Usuario &gt;&gt; &quot;${Usuario}&quot; e Senha &gt;&gt; &quot;${Senha}&quot;">
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Username}</arg>
+<arg>${Usuario}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:39.450" endtime="20221118 08:36:39.484"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:44.486" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:39.484" endtime="20221118 08:36:44.486"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:39.484" endtime="20221118 08:36:44.486"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:44.587" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-59.png"&gt;&lt;img src="selenium-screenshot-59.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:44.487" endtime="20221118 08:36:44.587"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:39.449" endtime="20221118 08:36:44.587"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:36:44.588" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:36:44.587" endtime="20221118 08:36:44.630"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:39.449" endtime="20221118 08:36:44.630"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:36:44.631" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20221118 08:36:44.631" endtime="20221118 08:36:44.706"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:39.449" endtime="20221118 08:36:44.707"/>
+</kw>
+<kw name="Preencher Text" library="MetodosGlobais">
+<arg>${Campo_Password}</arg>
+<arg>${Senha}</arg>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:44.708" endtime="20221118 08:36:44.729"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:49.733" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:44.730" endtime="20221118 08:36:49.733"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:44.729" endtime="20221118 08:36:49.733"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:49.826" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-60.png"&gt;&lt;img src="selenium-screenshot-60.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:49.733" endtime="20221118 08:36:49.826"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:44.707" endtime="20221118 08:36:49.826"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:36:49.827" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:36:49.826" endtime="20221118 08:36:49.862"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:44.707" endtime="20221118 08:36:49.862"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 08:36:49.863" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20221118 08:36:49.862" endtime="20221118 08:36:49.941"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:44.707" endtime="20221118 08:36:49.941"/>
+</kw>
+<kw name="Clicar no Botão" library="MetodosGlobais">
+<arg>${Btn_Login}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:49.944" endtime="20221118 08:36:49.974"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:36:54.985" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:49.974" endtime="20221118 08:36:54.985"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:49.974" endtime="20221118 08:36:54.985"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:36:55.065" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-61.png"&gt;&lt;img src="selenium-screenshot-61.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:36:54.985" endtime="20221118 08:36:55.065"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:49.943" endtime="20221118 08:36:55.065"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 08:36:55.066" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20221118 08:36:55.066" endtime="20221118 08:36:55.184"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:49.943" endtime="20221118 08:36:55.184"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:39.449" endtime="20221118 08:36:55.184"/>
+</kw>
+<kw name=" E acesso a pagina principal da home page" library="Steps_SWAGLABS">
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Logo_HomePage}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:36:55.186" endtime="20221118 08:36:55.223"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:37:00.228" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:36:55.226" endtime="20221118 08:37:00.228"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:55.223" endtime="20221118 08:37:00.228"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:37:00.381" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-62.png"&gt;&lt;img src="selenium-screenshot-62.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:37:00.228" endtime="20221118 08:37:00.381"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:55.185" endtime="20221118 08:37:00.381"/>
+</kw>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Btn_Menu}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:37:00.381" endtime="20221118 08:37:00.401"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:37:05.410" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:37:00.403" endtime="20221118 08:37:05.410"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:00.401" endtime="20221118 08:37:05.410"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:37:05.568" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-63.png"&gt;&lt;img src="selenium-screenshot-63.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:37:05.410" endtime="20221118 08:37:05.568"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:00.381" endtime="20221118 08:37:05.569"/>
+</kw>
+<status status="PASS" starttime="20221118 08:36:55.185" endtime="20221118 08:37:05.569"/>
+</kw>
+<kw name="E seleciono a opção Linkedin de contato" library="Steps_SWAGLABS">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Btn_Linkedin}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221118 08:37:05.570" endtime="20221118 08:37:05.858"/>
+</kw>
+<kw name="Clicar no Elemento" library="MetodosGlobais">
+<arg>${Btn_Linkedin}</arg>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221118 08:37:05.859" endtime="20221118 08:37:05.875"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 08:37:10.887" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221118 08:37:05.875" endtime="20221118 08:37:10.887"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:05.875" endtime="20221118 08:37:10.887"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:37:11.047" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-64.png"&gt;&lt;img src="selenium-screenshot-64.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:37:10.888" endtime="20221118 08:37:11.047"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:05.859" endtime="20221118 08:37:11.047"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221118 08:37:11.048" level="INFO">Clicking element 'xpath=//*[@id="page_wrapper"]/footer/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221118 08:37:11.048" endtime="20221118 08:37:11.099"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:05.859" endtime="20221118 08:37:11.100"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:05.569" endtime="20221118 08:37:11.100"/>
+</kw>
+<kw name="Então valido a pagina do Linkedin direcionada contendo as informações desejadas" library="Steps_SWAGLABS">
+<kw name="Validação de Elemento encontrado na tela" library="MetodosGlobais">
+<arg>${Element_Linkedin}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Validar elemento</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Validar elemento" library="MetodosGlobais">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221118 08:37:16.415" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-65.png"&gt;&lt;img src="selenium-screenshot-65.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221118 08:37:16.415" level="FAIL">Element 'xpath=//*[@id="global-nav"]/div/a/div/div/li-icon/svg/path' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221118 08:37:11.108" endtime="20221118 08:37:16.415"/>
+</kw>
+<kw name="Esperar" library="MetodosGlobais">
+<status status="NOT RUN" starttime="20221118 08:37:16.416" endtime="20221118 08:37:16.416"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20221118 08:37:16.416" endtime="20221118 08:37:16.416"/>
+</kw>
+<status status="FAIL" starttime="20221118 08:37:11.108" endtime="20221118 08:37:16.416"/>
+</kw>
+<msg timestamp="20221118 08:37:16.417" level="INFO">${Status} = False</msg>
+<status status="PASS" starttime="20221118 08:37:11.107" endtime="20221118 08:37:16.417"/>
+</kw>
+<kw name="Pass Execution If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Pass Execution</arg>
+<doc>Conditionally skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="PASS" starttime="20221118 08:37:16.417" endtime="20221118 08:37:16.417"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:11.106" endtime="20221118 08:37:16.417"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:11.106" endtime="20221118 08:37:16.417"/>
+</kw>
+<kw name="Finalizar Sessão" library="MetodosGlobais" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221118 08:37:16.590" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-66.png"&gt;&lt;img src="selenium-screenshot-66.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:37:16.419" endtime="20221118 08:37:16.591"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 08:37:16.591" endtime="20221118 08:37:18.945"/>
+</kw>
+<status status="PASS" starttime="20221118 08:37:16.418" endtime="20221118 08:37:18.945"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT07: Validar outro contato da pagina Home - Linkedin</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20221118 08:37:19.005" level="INFO" html="true">&lt;a href="recording_7.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_7.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221118 08:37:18.946" endtime="20221118 08:37:19.005"/>
+</kw>
+<doc>Esse Teste Validar outros meios de contatos da pagina Home</doc>
+<tag>contatos</tag>
+<status status="PASS" starttime="20221118 08:36:25.328" endtime="20221118 08:37:18.946"/>
+</test>
+<status status="PASS" starttime="20221118 08:30:40.313" endtime="20221118 08:37:19.007"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Carrinho</stat>
+<stat pass="3" fail="0" skip="0">contatos</stat>
+<stat pass="2" fail="0" skip="0">Login</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Suite SWAGLABS">Suite SWAGLABS</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
